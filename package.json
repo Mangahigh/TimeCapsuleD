@@ -1,0 +1,17 @@
+{
+  "name": "TimeCapsule",
+  "version": "0.1.0",
+  "description": "A queue that doesn't release messages until a specified time.",
+  "main": "lib/index.js",
+  "preferGlobal": true,
+  "author": "Alec Sammon (https://mangahigh.com)",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "minimist": "^1.2.0",
+    "redis": "^2.8.0"
+  },
+  "bin": {
+    "timecapsule": "./bin/timecapsule.js"
+  }
+}
