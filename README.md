@@ -48,7 +48,9 @@ Configuration:
 Time capsule runs on 127.0.0.1:1777 by default, and requires a Redis database to be available at 127.0.0.1:6379. These can be configured by either
 
 1. Passing a json config to the command line parameter: ```--config```.
-    e.g. ```timecapsule --config --config='{"redis": {"host":"localhost"}}'```
+    e.g. ```timecapsule --config='{"redis": {"host":"localhost"}}'```
+    
+    OR 
     
 2. Passing the location of a json config file the command line parameter: ```--config-file```.
     e.g ```timecapsule --config-file=config.json```
@@ -68,7 +70,7 @@ The current config options available are:
     "log": false,
     "redis": {
         "host": "127.0.0.1",
-        "port": 6379"
+        "port": 6379
     }
  }
  ```
@@ -78,13 +80,16 @@ Publishers/Subscribers:
 
 It is simple to write a new publisher/subscriber library. The following libraries are already available:
 
-- PHP [TimeCapsule PHP Client]()
+- PHP [TimeCapsule PHP Client](https://github.com/Mangahigh/TimeCapsule-PHP-Client)
 
 Influences:
 -----------
 
 - RabbitMq - https://www.rabbitmq.com
 - Linux at, batch, atq, atrm - https://linux.die.net/man/1/at
+- Kue - https://github.com/Automattic/kue
+- Bull - https://github.com/OptimalBits/bull
+- https://redislabs.com/ebook/part-2-core-concepts/chapter-6-application-components-in-redis/6-4-task-queues/6-4-2-delayed-tasks/
 
 Contributing:
 -------------
