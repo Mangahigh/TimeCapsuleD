@@ -9,8 +9,10 @@
   "private": false,
   "dependencies": {
     "ain2": "^3.0.0",
+    "lodash": "^4.17.11",
     "minimist": "^1.2.0",
     "redis": "^2.8.0",
+    "redlock": "^3.1.2",
     "syslog": "^0.1.1-1"
   },
   "bin": {
