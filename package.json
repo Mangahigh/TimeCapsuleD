@@ -1,6 +1,6 @@
 {
   "name": "TimeCapsule",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A queue that doesn't release messages until a specified time.",
   "main": "lib/index.js",
   "preferGlobal": true,
@@ -8,8 +8,7 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "ain2": "^3.0.0",
-    "lodash": "^4.17.11",
+    "lodash.merge": "^4.6.1",
     "minimist": "^1.2.0",
     "redis": "^2.8.0",
     "redlock": "^3.1.2",
