@@ -12,4 +12,4 @@ if (argv.config) {
   config = JSON.parse(fs.readFileSync(argv['config-file']));
 }
 
-new TimeCapsule(config).run();
+new TimeCapsule(config).runServer();
