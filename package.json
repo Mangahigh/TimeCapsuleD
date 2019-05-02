@@ -1,6 +1,6 @@
 {
-  "name": "TimeCapsule",
-  "version": "0.3.0",
+  "name": "TimeCapsuleD",
+  "version": "0.3.1",
   "description": "A queue that doesn't release messages until a specified time.",
   "main": "lib/index.js",
   "preferGlobal": true,

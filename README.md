@@ -10,9 +10,9 @@ It is designed to be used for scheduling once off events, at scale, with redunda
 Quick Start
 -----------
 
-```npm install -g timecapsule```
+```npm install -g timecapsuled```
 
-```timecapsule```
+```timecapsuled```
 
 We recommend using a tool like [forever](https://www.npmjs.com/package/forever) or [pm2](https://www.npmjs.com/package/pm2) to keep your process running. 
 
