@@ -1,5 +1,5 @@
-TimeCapsule
-===========
+TimeCapsuleD
+============
 
 A queue that doesn't release messages until a specified time.
 
@@ -48,12 +48,12 @@ Configuration:
 Time capsule runs on 127.0.0.1:1777 by default, and requires a Redis database to be available at 127.0.0.1:6379. These can be configured by either
 
 1. Passing a json config to the command line parameter: ```--config```.
-    e.g. ```timecapsule --config='{"redis": {"host":"localhost"}}'```
+    e.g. ```timecapsuled --config='{"redis": {"host":"localhost"}}'```
     
     OR 
     
 2. Passing the location of a json config file the command line parameter: ```--config-file```.
-    e.g ```timecapsule --config-file=config.json```
+    e.g ```timecapsuled --config-file=config.json```
     
 The current config options available are:
 - __host__: (default: *127.0.0.1*) The host name that timecapsule will listen on. 

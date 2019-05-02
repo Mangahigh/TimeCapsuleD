@@ -1,6 +1,6 @@
 {
-  "name": "TimeCapsuleD",
-  "version": "0.3.1",
+  "name": "timecapsuled",
+  "version": "0.3.2",
   "description": "A queue that doesn't release messages until a specified time.",
   "main": "lib/index.js",
   "preferGlobal": true,
@@ -15,6 +15,6 @@
     "syslog": "^0.1.1-1"
   },
   "bin": {
-    "timecapsule": "./bin/timecapsule.js"
+    "timecapsuled": "./bin/timecapsuled.js"
   }
 }
