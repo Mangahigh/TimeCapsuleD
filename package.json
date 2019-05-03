@@ -1,6 +1,6 @@
 {
   "name": "timecapsuled",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "description": "A queue that doesn't release messages until a specified time.",
   "main": "lib/index.js",
   "preferGlobal": true,
@@ -8,10 +8,12 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
+    "async-redis": "^1.1.7",
     "lodash.merge": "^4.6.1",
     "minimist": "^1.2.0",
     "redis": "^2.8.0",
     "redlock": "^3.1.2",
+    "redlock-async": "^3.1.2-fix.2",
     "syslog": "^0.1.1-1"
   },
   "bin": {
