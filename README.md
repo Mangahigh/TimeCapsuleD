@@ -55,7 +55,7 @@ Time capsule runs on 127.0.0.1:1777 by default, and requires a Redis database to
 2. Passing the location of a json config file the command line parameter: ```--config-file```.
     e.g ```timecapsuled --config-file=config.json```
     
-The current config options available are:
+The basic config options available are:
 - __host__: (default: *127.0.0.1*) The host name that timecapsule will listen on. 
 - __port__: (default: *1777*) The port that timescapsule will listen on
 - __log__: (default: *false*) If log messages should be written to the console
@@ -74,6 +74,8 @@ The current config options available are:
     }
  }
  ```
+ 
+ For a full set of config variable please see [lib/config.js]()
 
 Publishers/Subscribers:
 -----------------------
@@ -81,6 +83,34 @@ Publishers/Subscribers:
 It is simple to write a new publisher/subscriber library. The following libraries are already available:
 
 - PHP [TimeCapsule PHP Client](https://github.com/Mangahigh/TimeCapsule-PHP-Client)
+
+Basic format of messages
+
+__Publishing messages__
+1. Client connects to TimecapsuleD
+2. Server sends "OK"
+3. Client sends "STORE <Queue Name> <Embargo Date>"
+    - Queue Name can be any string without spaces
+    - Embargo date must be a RFC 2822 formatted date (e.g. "2004-02-12T15:19:21+00:00")
+4. Server sends "OK"
+5. Client sends message
+6. Server sents "OK" and closes connection
+
+__Retrieving messages__
+1. Client connects to TimecapsuleD
+2. Server sends "OK"
+3. Client sends "FETCH <Queue Name>"
+4. Server hangs until message has reached embargo date
+5. Server sends message to client
+6. Client sends "ACK"
+7. Server closes connection
+
+__Getting stats__
+1. Client connects to TimecapsuleD
+2. Server sends "OK"
+3. Client sends "STATS"
+4. Server sends stats and closes connection
+
 
 Influences:
 -----------

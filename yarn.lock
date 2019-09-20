@@ -2,20 +2,38 @@
 # yarn lockfile v1
 
 
+async-redis@^1.1.7:
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/async-redis/-/async-redis-1.1.7.tgz#d9e236afa594bdc7b6e00f5b03f1d2304c017d50"
+  integrity sha512-phpZe2/U+Ih4Lpy72KWF4+c8gymsUgzg6NV/TZUb8BLNn7soQewFxqcq9nndobfPmzXiuhMLi6GNBiQVIor/EA==
+  dependencies:
+    redis "^2.8.0"
+    redis-commands "^1.3.1"
+
+bluebird@^3.3.3:
+  version "3.5.5"
+  resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.5.tgz#a8d0afd73251effbbd5fe384a77d73003c17a71f"
+  integrity sha512-5am6HnnfN+urzt4yfg7IgTbotDjIT/u8AJpEt0sIU9FtXfVeezXAPKswrG+xKUCOYAINpSdgZVDU6QFh+cuH3w==
+
 double-ended-queue@^2.1.0-0:
   version "2.1.0-0"
   resolved "https://registry.yarnpkg.com/double-ended-queue/-/double-ended-queue-2.1.0-0.tgz#103d3527fd31528f40188130c841efdd78264e5c"
   integrity sha1-ED01J/0xUo9AGIEwyEHv3XgmTlw=
+
+lodash.merge@^4.6.2:
+  version "4.6.2"
+  resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
+  integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
 
 minimist@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/minimist/-/minimist-1.2.0.tgz#a35008b20f41383eec1fb914f4cd5df79a264284"
   integrity sha1-o1AIsg9BOD7sH7kU9M1d95omQoQ=
 
-redis-commands@^1.2.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/redis-commands/-/redis-commands-1.4.0.tgz#52f9cf99153efcce56a8f86af986bd04e988602f"
-  integrity sha512-cu8EF+MtkwI4DLIT0x9P8qNTLFhQD4jLfxLR0cCNkeGzs87FN6879JOJwNQR/1zD7aSYNbU0hgsV9zGY71Itvw==
+redis-commands@^1.2.0, redis-commands@^1.3.1:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/redis-commands/-/redis-commands-1.5.0.tgz#80d2e20698fe688f227127ff9e5164a7dd17e785"
+  integrity sha512-6KxamqpZ468MeQC3bkWmCB1fp56XL64D4Kf0zJSwDZbVLLm7KFkoIcHrgRvQ+sk8dnhySs7+yBg94yIkAK7aJg==
 
 redis-parser@^2.6.0:
   version "2.6.0"
@@ -30,3 +48,20 @@ redis@^2.8.0:
     double-ended-queue "^2.1.0-0"
     redis-commands "^1.2.0"
     redis-parser "^2.6.0"
+
+redlock-async@^3.1.2-fix.2:
+  version "3.1.2-fix.2"
+  resolved "https://registry.yarnpkg.com/redlock-async/-/redlock-async-3.1.2-fix.2.tgz#62806e936c73784e4bbde970639f603d3c7c7799"
+  integrity sha512-4lnHE+UPoz3TFkhUqnVsdSMybG8vE7aKYxkfby0F4sSKu9N7J1tJ3LBAA1hEzTeJ97JI7nTw5pOBrPhwOtlN9w==
+
+redlock@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/redlock/-/redlock-4.0.0.tgz#cae41c8addf57ff87b79510253495b0fa8dd46c6"
+  integrity sha512-971JQ2rBzZKIOrlqjjcEO4lbxmuq71QtfTNYk7w/m9h59mBYpN+r7xHZEWZw8ubEwvrxxzmqOl4fC2o05+UjDw==
+  dependencies:
+    bluebird "^3.3.3"
+
+syslog@^0.1.1-1:
+  version "0.1.1-1"
+  resolved "https://registry.yarnpkg.com/syslog/-/syslog-0.1.1-1.tgz#f69f74b0baf8a25c725af97977a18eb11927a5e1"
+  integrity sha512-7fn4sikkTRrc4kZk/i/ItCktnPD2qG+nKmgTVcuLr2VrY2V9adNhw9fN02HL6rTthwu2Og9Icr1GxZlaLp39Lg==
