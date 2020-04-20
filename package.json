@@ -1,6 +1,6 @@
 {
   "name": "timecapsuled",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "A queue that doesn't release messages until a specified time.",
   "main": "lib/index.js",
   "preferGlobal": true,
